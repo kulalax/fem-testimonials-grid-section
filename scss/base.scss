@@ -1,0 +1,24 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  padding: 7rem 2.4rem;
+  background-color: $c-light-grayish-blue;
+
+  @media (min-width: 768px) {
+    padding-inline: 16.5rem;
+    display: grid;
+    place-content: center;
+  }
+}
